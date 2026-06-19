@@ -9,6 +9,7 @@ class ProductImageAdmin(admin.StackedInline):
 
 
 class ProductAdmin(admin.ModelAdmin):
+    list_display = ["product_name", "price"]
     inlines = [ProductImageAdmin]
 
 
